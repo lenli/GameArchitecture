@@ -14,13 +14,14 @@
 @implementation Level {
     Character *_character;
     CCPhysicsNode *_physicsNode;
-    BOOL _jumped;
-    NSInteger _currentLevel;
+    NSString *_currentLevel;
+    NSString *_nextLevel;
 }
 
 
 - (void)didLoadFromCCB {
-    NSLog(@"Loading Level");
+    _physicsNode.collisionDelegate = self;
+    NSLog(@"Current Level: %@ -- Next Level: %@", _currentLevel, _nextLevel);
 }
 
 
@@ -44,12 +45,10 @@
 
 - (BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair hero:(CCNode *)hero flag:(CCNode *)flag {
     self.paused = YES;
-    
     WinPopup *popup = (WinPopup *)[CCBReader load:@"WinPopup"];
     popup.positionType = CCPositionTypeNormalized;
     popup.position = ccp(0.5, 0.5);
-    _currentLevel++;
-    popup.nextLevelName = [NSString stringWithFormat:@"Level%d",_currentLevel];
+    popup.nextLevelName = _nextLevel;
     [self addChild:popup];
     
     return TRUE;
@@ -62,7 +61,7 @@
 }
 
 - (void)gameOver {
-    NSString *currentLevelName = [NSString stringWithFormat:@"Level%d",_currentLevel];
+    NSString *currentLevelName = _currentLevel;
     CCScene *restartScene = [CCBReader loadAsScene:currentLevelName];
     CCTransition *transition = [CCTransition transitionFadeWithDuration:0.8f];
     [[CCDirector sharedDirector] presentScene:restartScene withTransition:transition];

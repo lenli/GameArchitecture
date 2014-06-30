@@ -13,9 +13,7 @@
 }
 
 - (void)didLoadFromCCB {
-    NSLog(@"Loading Gameplay");
-    self.userInteractionEnabled = YES;
-    CCScene *level = [CCBReader loadAsScene:@"Level1"];
+    CCScene *level = [CCBReader loadAsScene:@"Level3" owner:self];
     [_levelNode addChild:level];
 }
 

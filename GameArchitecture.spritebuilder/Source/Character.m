@@ -16,7 +16,7 @@
 - (void)jump {
     [self.physicsBody.chipmunkObjects[0] eachArbiter:^(cpArbiter *arbiter) {
         if (!_jumped) {
-            [self.physicsBody applyImpulse:ccp(0, 2000)];
+            [self.physicsBody applyImpulse:ccp(0, 400)];
             _jumped = TRUE;
             [self performSelector:@selector(resetJump) withObject:nil afterDelay:0.3f];
         }
