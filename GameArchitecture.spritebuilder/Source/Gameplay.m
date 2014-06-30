@@ -16,10 +16,14 @@
     CCPhysicsNode *_physicsNode;
     BOOL _jumped;
     NSInteger _currentLevel;
+    CCNode *_levelNode;
 }
 
 - (void)didLoadFromCCB {
     _physicsNode.collisionDelegate = self;
+    self.userInteractionEnabled = YES;
+    CCScene *level = [CCBReader loadAsScene:@"Level1"];
+    [_levelNode addChild:level];
 }
 
 - (void)onEnter {

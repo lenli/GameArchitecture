@@ -20,37 +20,37 @@
 		<key>ArchitectureAssets/boxEmpty.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{1, 449}, {35, 35}}</string>
+			<string>{{327, 69}, {70, 70}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
 			<false/>
 			<key>sourceColorRect</key>
-			<string>{{0, 0}, {35, 35}}</string>
+			<string>{{0, 0}, {70, 70}}</string>
 			<key>sourceSize</key>
-			<string>{35, 35}</string>
+			<string>{70, 70}</string>
 		</dict>
 		<key>ArchitectureAssets/fence.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{38, 449}, {35, 31}}</string>
+			<string>{{1, 449}, {70, 61}}</string>
 			<key>offset</key>
-			<string>{0, -2}</string>
+			<string>{0, -4}</string>
 			<key>rotated</key>
-			<true/>
+			<false/>
 			<key>sourceColorRect</key>
-			<string>{{0, 4}, {35, 31}}</string>
+			<string>{{0, 9}, {70, 61}}</string>
 			<key>sourceSize</key>
-			<string>{35, 35}</string>
+			<string>{70, 70}</string>
 		</dict>
 		<key>ArchitectureAssets/flagYellow.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{327, 69}, {67, 70}}</string>
+			<string>{{399, 69}, {67, 70}}</string>
 			<key>offset</key>
 			<string>{-1, 0}</string>
 			<key>rotated</key>
-			<false/>
+			<true/>
 			<key>sourceColorRect</key>
 			<string>{{0, 0}, {67, 70}}</string>
 			<key>sourceSize</key>
@@ -59,11 +59,11 @@
 		<key>ArchitectureAssets/flagYellow2.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{284, 237}, {67, 70}}</string>
+			<string>{{399, 138}, {67, 70}}</string>
 			<key>offset</key>
 			<string>{-1, 0}</string>
 			<key>rotated</key>
-			<false/>
+			<true/>
 			<key>sourceColorRect</key>
 			<string>{{0, 0}, {67, 70}}</string>
 			<key>sourceSize</key>

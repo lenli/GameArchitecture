@@ -2858,8 +2858,6 @@
 								</array>
 							</dict>
 						</array>
-						<key>selected</key>
-						<true/>
 						<key>seqExpanded</key>
 						<true/>
 					</dict>
@@ -3483,7 +3481,7 @@
 			</dict>
 		</array>
 		<key>customClass</key>
-		<string>Level3</string>
+		<string></string>
 		<key>displayName</key>
 		<string>CCNode</string>
 		<key>memberVarAssignmentName</key>
